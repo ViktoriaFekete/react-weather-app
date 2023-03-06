@@ -1,4 +1,4 @@
-import './header.css'
+import './header.scss'
 
 type HeaderProps = {
     title: string
@@ -6,7 +6,9 @@ type HeaderProps = {
   
 function Header({title}: HeaderProps) {
     return (
-        <div className="header">{title}</div>
+        <div className="header">
+            <h1>{title}</h1>
+        </div>
     )
 }
 

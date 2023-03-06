@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import AdditionalData from './components/AdditionalData/AdditionalData'
 import Controls from './components/Controls/Controls'
 import Header from './components/Header/Header'

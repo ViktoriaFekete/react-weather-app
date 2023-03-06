@@ -1,3 +1,5 @@
+import './widget.scss';
+
 export type WidgetProps = {
     value: number,
     text: string,
@@ -7,14 +9,14 @@ export type WidgetProps = {
 function Widget({value, text, unit}: WidgetProps) {
     // <> toto moze byt aj React.Fragment, alebo proste <div>
   return (
-    <>  
-        <div>
+    <div className='widget'>  
+        <div className='widget-value'>
             {value} {unit}
         </div>
-        <div>
+        <div className='widget-title'>
             {text}
         </div>
-    </>
+    </div>
   )
 }
 

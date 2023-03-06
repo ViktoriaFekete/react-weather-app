@@ -1,4 +1,5 @@
 import Widget, { WidgetProps } from "./Widget";
+import "./additionaldata.scss";
 
 const data: WidgetProps[] = [
     {
@@ -20,12 +21,18 @@ const data: WidgetProps[] = [
 
 // key by mohol byt uuid 
 function AdditionalData() {
-  return (
-    <div>
-        {data.map(props => (<Widget key={props.text} value={props.value} unit={props.unit} text={props.text}/>))}
-        
-    </div>
-  )
+    return (
+        <div>
+            {data.map(props => (
+                <Widget 
+                    key={props.text} 
+                    value={props.value} 
+                    unit={props.unit} 
+                    text={props.text} 
+                />
+            ))}
+        </div>
+    )
 }
 
 export default AdditionalData;
